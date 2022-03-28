@@ -74,12 +74,8 @@ li{
     width: 300px;
     height: 400px;
     margin: 15px;
-    transition: all 0.5s linear;
     }
-.images:hover{
-    box-shadow: 2px 3px 5px 2px grey;
-    transform: scale(1.1,1.1);
-}
+
 
 .content {
 	width:400px;
