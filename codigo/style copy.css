@@ -11,6 +11,9 @@
     background-color: #ffffff;
   
 }
+a{
+    text-decoration: none;
+}
 /*header img{
      width: 184px;
 }
@@ -69,14 +72,7 @@ li{
 .div2{
     text-align: center;
     
-    
 }
-.carrusel{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-}
-
 .images{
     width: 300px;
     height: 400px;
@@ -84,8 +80,8 @@ li{
     transition: all 0.5s linear;
     }
  .images :hover{
-    box-shadow: 2px 3px 5px 2px grey;
-    transform: scale(1.1,1.1);
+    box-shadow: 2px 3px 5px 2px grey !important;
+    transform: scale(1.1,1.1) !important;
  }   
 
 
@@ -145,19 +141,10 @@ margin: 20px;
     grid-template-columns: repeat(5,1fr);
     align-items: center;
     width: 100vw;
-    padding-top: 0;
-    padding-bottom: 0;
 }
-
 .navbar .logo{
-    width: 130px;}
-
-ul{
-    margin-bottom: 0;
-    padding-left: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start:0;
+    width: 130px;
+    
 }
 .navbar .menu{
     grid-column: 2/6;
@@ -217,7 +204,6 @@ ul{
      padding: 7px 13px;
      border-radius: 3px;
      text-transform: uppercase;
-     text-decoration: none;
  }
  li a.active ,li a:hover{
      background: #fe6d73;
