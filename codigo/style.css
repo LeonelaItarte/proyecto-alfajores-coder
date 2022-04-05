@@ -8,9 +8,10 @@
     list-style: none;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    background-color: #ffffff;
+    background-color: #ffc4d6;
   
 }
+
 /*header img{
      width: 184px;
 }
@@ -45,7 +46,11 @@ li{
     display: inline;
     padding: 10px;
 }*/
-
+.logo{
+    height: 80px;
+    width: 100px;
+    margin-left: 15px;
+}
 .contenedor{
     position: relative;
     display: inline-block;
@@ -71,22 +76,25 @@ li{
     
     
 }
+.imagenes{
+    width: 300px;
+    height: 400px;
+    margin: 15px;
+    transition: all 0.5s linear;
+    }
+
+.imagenes :hover{
+    box-shadow: 2px 3px 5px 2px grey;
+    transform: scale(1.1,1.1);
+ }  
+
 .carrusel{
     width: 500px;
     height: 500px;
     object-fit: cover;
 }
 
-.images{
-    width: 300px;
-    height: 400px;
-    margin: 15px;
-    transition: all 0.5s linear;
-    }
- .images :hover{
-    box-shadow: 2px 3px 5px 2px grey;
-    transform: scale(1.1,1.1);
- }   
+
 
 
 .content {
@@ -149,9 +157,6 @@ margin: 20px;
     padding-bottom: 0;
 }
 
-.navbar .logo{
-    width: 130px;}
-
 ul{
     margin-bottom: 0;
     padding-left: 0;
@@ -164,6 +169,7 @@ ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
+    margin-top: 18px;
 }
 
 .main{
@@ -213,16 +219,17 @@ ul{
      margin-right: 20px;
  }
   nav ul li a{
-     color: #001219;
+     color: black;
      padding: 7px 13px;
      border-radius: 3px;
      text-transform: uppercase;
      text-decoration: none;
  }
  li a.active ,li a:hover{
-     background: #fe6d73;
+     background: #00f5d443;
      transition: 1s;
-}
+     
+ }
 .b{
 display: flex;
 flex-direction: row;
