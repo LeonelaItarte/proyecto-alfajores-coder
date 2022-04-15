@@ -1,0 +1,8 @@
+$display:(
+    color: #ffc4d6,
+    display: flex,
+);
+
+header{
+    background-color: map-get($display,color);
+}

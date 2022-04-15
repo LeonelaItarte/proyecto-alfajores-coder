@@ -1,10 +1,27 @@
 @import url("https://fonts.googleapis.com/css2? family= Roboto & display=swap");
+header {
+  background-color: #ffc4d6;
+}
+
+.logo {
+  height: 80px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 15px;
+  width: 100vw;
+}
 
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
   font-family: 'Roboto', sans-serif;
@@ -61,7 +78,7 @@ li{
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 60px;
 }
 
@@ -80,9 +97,9 @@ li{
 
 .imagenes:hover {
   -webkit-box-shadow: 2px 3px 5px 2px grey;
-          box-shadow: 2px 3px 5px 2px grey;
+  box-shadow: 2px 3px 5px 2px grey;
   -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
   border-radius: 3px;
 }
 
@@ -90,7 +107,7 @@ li{
   width: 500px;
   height: 500px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .content {
@@ -117,7 +134,7 @@ li{
 
 .nosotros img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*footer{
@@ -152,23 +169,27 @@ li{
 
 }*/
 .navbar {
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    align-items: center;
-    width: 100vw;
-    padding-top: 0;
-    padding-bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 ul {
   margin-bottom: 0;
   padding-left: 0;
   -webkit-margin-before: 0;
-          margin-block-start: 0;
+  margin-block-start: 0;
   -webkit-margin-after: 0;
-          margin-block-end: 0;
+  margin-block-end: 0;
   -webkit-padding-start: 0;
-          padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 .navbar .menu {
@@ -179,9 +200,9 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin-top: 18px;
 }
 
@@ -193,16 +214,24 @@ ul {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .main2 {
-    grid-template-columns: repeat(3,1fr);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100vw;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
 }
 
 .h2 {
@@ -224,11 +253,11 @@ ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   width: 100%;
   height: 100%;
 }
@@ -260,22 +289,24 @@ li a.active, li a:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .prueba {
   height: 200px;
   width: 200px;
+  background: -webkit-gradient(linear, left top, right top, from(grey), to(black));
   background: linear-gradient(90deg, grey, black);
-  box-shadow: 1px 1px 3px 1px grey;
+  -webkit-box-shadow: 1px 1px 3px 1px grey;
+          box-shadow: 1px 1px 3px 1px grey;
 }
 
 .animation {
   -webkit-box-shadow: 1px 1px 3px 1px grey;
-          box-shadow: 1px 1px 3px 1px grey;
+  box-shadow: 1px 1px 3px 1px grey;
 }
 
 @media screen and (max-width: 600px) {
@@ -288,6 +319,7 @@ li a.active, li a:hover {
     display: none;
   }
   .navbar {
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -297,4 +329,4 @@ li a.active, li a:hover {
     display: none;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
